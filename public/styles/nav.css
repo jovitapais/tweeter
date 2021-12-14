@@ -1,0 +1,24 @@
+nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4056A1;
+  color: #ffffff;
+  height: 65px;
+  width: 100%;
+  font-family:'Bungee', cursive;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.nav-right-content {
+  font-size: 15px;
+  font-family: 'Source Sans Pro',sans-serif;
+  justify-content:
+}
+
+.fa-angle-double-down {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
