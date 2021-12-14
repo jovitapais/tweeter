@@ -13,12 +13,13 @@ nav {
 
 .nav-right-content {
   font-size: 15px;
+  padding: 0 1em;
   font-family: 'Source Sans Pro',sans-serif;
-  justify-content:
+  justify-content:center
 }
 
 .fa-angle-double-down {
   display: flex;
   justify-content: center;
-  color: red;
+  color: #9c9ce4;
 }

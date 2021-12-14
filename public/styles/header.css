@@ -1,0 +1,14 @@
+header {
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  background-color: #9c9ce4;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/background.png");
+}
