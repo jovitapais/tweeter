@@ -1,0 +1,34 @@
+#tweet-text {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: mintcream;
+  background-color: lavender;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  width:100%;
+}
+.new-tweet button {
+  background-color: #9c9ce4;
+  color: aliceblue;
+  border: none;
+  font-family: "Bungee",cursive;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  
+}
+
+.new-tweet {
+  padding: 0 0.5em 0.5em;
+  width:100%;
+}
+
+.new-tweet .footer {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  
+}
