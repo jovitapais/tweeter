@@ -1,23 +1,13 @@
-$(document).ready(() => {
+
   
-  console.log('Composer connected');
-  console.log('Composer connected');
-  $("#tweet-text").on('keypress', () => {
-    console.log('keypress');
-  });
-  $("#tweet-text").on('keydown', () => {
-    console.log('keydown');
-  });
-  $("#tweet-text").on('keyup', () => {
-    console.log('keyup');
-  });
-  $("#tweet-text").on('blur', () => {
-    console.log('blur');
-  });
-  $("#tweet-text").on('change', () => {
-    console.log('change');
-  });
-  $("#tweet-text").on('input', () => {
-    console.log('input');
+$(document).ready(() => {
+
+  const tweetLength = 140;
+  $("#tweet-text").on('input', function() {
+    let counter = tweetLength - $(this).val().length;
+    const counterTag = $(this).parent().prop("tagName") + " div .counter";
+    $(counterTag).text(counter);
+    (counter < 0) ? $(counterTag).addClass("red-font") : $(counterTag).removeClass("red-font");
+    
   });
 });
