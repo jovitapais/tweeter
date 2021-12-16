@@ -27,9 +27,11 @@
     <!-- Header CSS -->
     <link rel="stylesheet" href="./styles/header.css" type="text/css" />
 
-     <!-- New-tweet CSS -->
-     <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+    <!-- New-tweet CSS -->
+    <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
 
+    <!-- New-tweet CSS -->
+    <link rel="stylesheet" href="./styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -39,6 +41,8 @@
 
     <!-- Character Counter JS -->
     <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+
+     
     
   </head>
 
@@ -70,7 +74,7 @@
        ad omnis similique alias reiciendis blanditiis. </p>
     </h1>   -->
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <!-- <h2>Compose Tweet</h2> -->
       <form method="POST" action="/tweets">
         <!-- <label for="tweet-text">What are you humming about?</label> -->
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -80,6 +84,31 @@
         </div>
       </form>
     </section>
+
+    <section class="tweets">
+      <article class="tweet">
+        <header>
+          <div>
+            <img src="" alt="avatar goes here">
+            <span>Name</span>
+          </div>
+          <p>
+            Tweet
+          </p>
+        </header>
+        <footer>
+          <span>
+            Date
+          </span>
+          <div>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+
     </main>
   </body>
 </html>
