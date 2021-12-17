@@ -7,7 +7,19 @@ $(document).ready(() => {
     let counter = tweetLength - $(this).val().length;
     const counterTag = $(this).parent().prop("tagName") + " div .counter";
     $(counterTag).text(counter);
-    (counter < 0) ? $(counterTag).addClass("red-font") : $(counterTag).removeClass("red-font");
+
+    if(counter < 0) {
+      $(counterTag).addClass("red-font");
+
+    } else {
+      $(counterTag).removeClass("red-font");
+      $("#alert").hide();
+    }
     
+
+    
+    
+    
+      
   });
 });

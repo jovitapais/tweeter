@@ -5,35 +5,39 @@
   width: 100%;
   margin-top: 40px;
   margin-bottom: 10px;
-  
+  margin-top: 9.5px;
   background-color: transparent;
 
 }
 
-.tweet header {
-    
-    background-color: transparent;
-    background-image: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
 .tweet {
   margin-bottom: 10px;
   width: 100%;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-style: solid;
 }
 
+
 .tweet:hover {
   box-shadow: 5px 5px rgb(177, 177, 177);
 }
+
+
+.tweet header {
+    
+    background-color: transparent;
+    background-image: none;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 
 .tweet header div {
   width: 90%;
@@ -48,6 +52,8 @@
   margin-top: 20px;
   margin-bottom: 0;
   padding-left: 20px;
+  padding-right: 20px;
+  overflow-wrap: break-word;
   border-bottom: 3px solid;
 }
 

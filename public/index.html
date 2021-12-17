@@ -52,7 +52,7 @@
     <nav>
       <span>tweeter</span>
       <div class="nav-right-content" ><strong> Write </strong> a new tweet
-      <i class="fas fa-angle-double-down"></i></div>
+      <i id="arrow" class="fas fa-angle-double-down"></i></div>
     </nav>
 
 
@@ -62,20 +62,18 @@
       </div>
       
       <div>
-          <h2>Your Name</h2>
+          <h2><strong>Amy </strong>Mansell</h2>
       </div>
   </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-    <!-- <h1>This is how the body looks like.
-    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit esse, tempora possimus amet culpa ullam.
-       Unde ratione nobis earum tempora perspiciatis quas dolores incidunt, 
-       ad omnis similique alias reiciendis blanditiis. </p>
-    </h1>   -->
     <section class="new-tweet">
       <!-- <h2>Compose Tweet</h2> -->
-      <form method="POST" action="/tweets">
+      <div id="alert">
+        <!-- Error message goes here! -->
+      </div>
+      <form method="POST" action="/tweets" id="tweet-form">
         <!-- <label for="tweet-text">What are you humming about?</label> -->
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="footer">
@@ -85,28 +83,8 @@
       </form>
     </section>
 
-    <section class="tweets">
-      <article class="tweet">
-        <header>
-          <div>
-            <img src="" alt="avatar goes here">
-            <span>Name</span>
-          </div>
-          <p>
-            Tweet
-          </p>
-        </header>
-        <footer>
-          <span>
-            Date
-          </span>
-          <div>
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+    <section class="tweets" id="tweets-container">
+    
     </section>
 
     </main>

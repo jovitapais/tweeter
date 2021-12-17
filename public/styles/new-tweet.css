@@ -4,7 +4,6 @@
   border-left: none;
   border-right: none;
   background-color: mintcream;
-  background-color: lavender;
   border-bottom: 2px solid black;
   outline: none;
   padding: 0.5em;
@@ -39,3 +38,8 @@
 .nav div.fas {
   color: rgb(206, 58, 58);
 }
+
+.new-tweet #alert {
+  display: none;
+  color: red;
+} 

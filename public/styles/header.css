@@ -1,5 +1,6 @@
 header {
-  height: 400px;
+  /* margin-top: 120px; */
+  height: 550px;
   width: 100%;
   background-color: #9c9ce4;
   padding-top: 2em;
@@ -9,4 +10,5 @@ header {
   justify-content: center;
   align-items: center;
   background-image: url("../images/background.png");
+  font-family:'Source Sans Pro',sans-serif;
 }
