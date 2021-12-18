@@ -1,0 +1,35 @@
+@media only screen and (min-width: 800px) {
+  body{
+    display: flex;
+    flex-direction: row;
+    background-color:lavenderblush;
+  }
+ 
+   .header {
+    width: 33.3%;
+    float: left;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+  }
+
+  .container {
+    width: 50%;
+    float: right;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+.media {
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+  .new-tweet {
+    margin-top: 100px;
+
+  } 
+}

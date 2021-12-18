@@ -8,7 +8,7 @@ $(document).ready(() => {
     const counterTag = $(this).parent().prop("tagName") + " div .counter";
     $(counterTag).text(counter);
 
-    if(counter < 0) {
+    if (counter < 0) {
       $(counterTag).addClass("red-font");
 
     } else {

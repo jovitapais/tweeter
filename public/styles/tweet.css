@@ -1,3 +1,18 @@
+.media {
+  margin-right: 20px;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.wrapHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px;
+}
+
 .tweets {
   
   display: flex;
@@ -12,12 +27,16 @@
 
 .tweet {
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 30px;
+  padding-right: 100px;
   width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-style: solid;
+  padding: 30px;
 }
 
 

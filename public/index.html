@@ -30,9 +30,10 @@
     <!-- New-tweet CSS -->
     <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
 
-    <!-- New-tweet CSS -->
+    <!-- Responsive design CSS -->
     <link rel="stylesheet" href="./styles/tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="./styles/responsive-design.css" />
+    <!-- media="(min-width:1024px) -->
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -55,15 +56,16 @@
       <i id="arrow" class="fas fa-angle-double-down"></i></div>
     </nav>
 
-
-    <header>
+    <div class='media'>
+    <header class='wrapHead'>
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       
       <div>
-          <h2><strong>Amy </strong>Mansell</h2>
+          <h2>Amy Mansell</h2>
       </div>
+   
   </header>
 
     <!-- Page-specific (main) content here -->
@@ -74,6 +76,7 @@
         <!-- Error message goes here! -->
       </div>
       <form method="POST" action="/tweets" id="tweet-form">
+       
         <!-- <label for="tweet-text">What are you humming about?</label> -->
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="footer">
@@ -88,5 +91,7 @@
     </section>
 
     </main>
+
+  </div>
   </body>
 </html>

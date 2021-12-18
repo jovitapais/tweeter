@@ -34,14 +34,15 @@
 // ];
 
 $(document).ready(() => {
-  $("#arrow").toggle("bounce", { times: 3 });
+ 
   const renderTweets = function(tweets) {
-    const tweetsContainer = $('#tweets-container');
+    $('#tweets-container').empty();
+    // const tweetsContainer = $('#tweets-container');
     for (let tweet of tweets) {   // loops through tweets
     // calls createTweetElement for each tweet
-      const $tweet = createTweetElement(tweet);
+      const nextTweet = createTweetElement(tweet);
       // takes return value and appends it to the tweets container
-      $('#tweets-container').prepend($tweet); //adds messaged at the beginning of older messages
+      $('#tweets-container').prepend(nextTweet); //adds messaged at the beginning of older messages
     }
   };
 
@@ -88,7 +89,7 @@ $(document).ready(() => {
 
 
   $("#tweet-form").on("submit", function(event) {
-
+    console.log("line 91");
     event.preventDefault();
     const tweetLength = $("#tweet-text").val().length;
 
@@ -102,13 +103,14 @@ $(document).ready(() => {
       $("#alert").text("🚨 Cannot be empty, please type somthing.");
 
     } else {
-
+      
       $("#alert").hide();
       $.post('/tweets', $(this).serialize())
-        .then($('#tweets-container').empty())
-        .then(loadTweets)
-        .then$("#tweet-text").val('')
-        .then($(".counter").val('140'))
+        
+       
+        .then(() => loadTweets())
+        .then(() => $("#tweet-text").val(''))
+        .then(() => $(".counter").val('140'))
       // .then($("#tweet-text").val(''))
         .catch(err => console.log("Error ", err));
     }
