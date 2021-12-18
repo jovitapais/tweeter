@@ -14,11 +14,11 @@ It uses HTML, CSS, JS, jQuery and AJAX to deliver a simplified twitter experienc
 
 ## Final Product
 
-!["Screenshot of Home page"](https://github.com/jovitapais/tinyapp/blob/master/Docs/Home.png?raw=true)
+!["Screenshot of Desktop view"](https://github.com/jovitapais/tweeter/blob/master/public/images/Desktopview.png)
 
-!["Screenshot of Login page"](https://github.com/jovitapais/tinyapp/blob/master/Docs/Login.png?raw=true)
+!["Screenshot of Mobile view"](https://github.com/jovitapais/tweeter/blob/master/public/images/Mobile%20view.png)
 
-!["Screenshot of ShortUrl page"](https://github.com/jovitapais/tinyapp/blob/master/Docs/ShortUrl.png?raw=true)
+!["Screenshot of empty tweet warning message"](https://github.com/jovitapais/tweeter/blob/master/public/images/Empty%20tweet.png)
 
 
 ## Dependencies
